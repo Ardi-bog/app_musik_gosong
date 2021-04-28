@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".login"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ilustrasi"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/musik"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="35dp" />
+
+    <EditText
+        android:paddingLeft="15dp"
+        android:layout_gravity="center"
+        android:drawablePadding="20dp"
+        android:drawableLeft="@drawable/pesawat"
+        android:fontFamily="@font/sulphurpoint"
+        android:textColorHint="#212020"
+        android:layout_below="@+id/ilustrasi"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:backgroundTint="#f1f2f6"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/form_login"
+        android:id="@+id/editTextEmail"
+        android:elevation="10dp"
+        android:hint="email"
+        android:inputType="textEmailAddress" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/editTextPassword"
+        android:backgroundTint="#f1f2f6"
+        android:hint="password"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/padlock"
+        android:drawablePadding="20dp"
+        android:layout_below="@+id/editTextEmail"
+        android:fontFamily="@font/sulphurpoint"
+        android:textColorHint="#212020"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:elevation="10dp"
+        android:background="@drawable/form_login" />
+    <TextView
+        android:id="@+id/textViewCreateAccount"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Register Sekarang?"
+        android:gravity="center_horizontal" />
+
+    <ImageButton
+        android:id="@+id/btn_login"
+        android:layout_below="@id/textViewCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="#fff"
+        android:src="@drawable/bjir" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ikon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943" />
+
+</RelativeLayout>

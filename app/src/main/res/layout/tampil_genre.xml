@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/list_genre"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_genre"
+            android:fontFamily="@font/sulphurpoint"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

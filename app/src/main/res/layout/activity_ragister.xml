@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".login"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ilustrasi"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+
+
+
+        <EditText
+            android:paddingLeft="15dp"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/pesawat"
+            android:fontFamily="@font/sulphurpoint"
+            android:textColorHint="#212020"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:backgroundTint="#f1f2f6"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_below="@+id/ilustrasi"
+            android:background="@drawable/form_login"
+            android:id="@+id/editTextEmail"
+            android:hint="email"
+            android:elevation="10dp"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_below="@+id/editTextEmail"
+            android:backgroundTint="#f1f2f6"
+            android:hint="password"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="15dp"
+            android:drawableLeft="@drawable/padlock"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/sulphurpoint"
+            android:textColorHint="#212020"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:elevation="10dp"
+            android:background="@drawable/form_login" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_below="@id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Login Sekarang" />
+
+    <ImageButton
+        android:id="@+id/btn_reg"
+        android:layout_below="@id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="235dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="#fff"
+        android:src="@drawable/bjir" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn_reg"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ikon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943" />
+
+
+</RelativeLayout>
